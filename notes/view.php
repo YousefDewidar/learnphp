@@ -16,13 +16,8 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $count = $stmt->rowCount();
 
-if ($count > 0) {
-  echo json_encode([
-    'status' => 'success',
-    'data' => $data,
-  ]);
-} else {
-  echo json_encode([
-    'status' => 'error',
-  ]);
-}
+
+echo json_encode([
+  'status' => 'success',
+  'data' => $data,
+]);
