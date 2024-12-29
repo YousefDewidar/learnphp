@@ -1,6 +1,8 @@
 <?php
 include "helper.php";
 
+header('Content-Type: application/json');
+
 $dsn = "mysql:host=localhost;dbname=notesapp";
 $user = "root";
 $pass = "";
