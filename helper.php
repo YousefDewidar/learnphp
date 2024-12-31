@@ -20,7 +20,7 @@ function uploudImage($imageRequestName)
   if (empty($imageName)) {
     echo  json_encode([
       'status' => 'failed',
-      'message' => 'Please upload an image',
+      'message' => "Please upload an image",
     ]);
     return "failed";
   } elseif (!in_array($ext, $allowedExtensions)) {
